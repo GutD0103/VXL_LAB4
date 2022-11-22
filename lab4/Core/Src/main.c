@@ -110,11 +110,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  SCH_Dispatch_Tasks () ;
-	  if(flag != 0){
-		  HAL_UART_Transmit(&huart2 ,( void *)str ,
-				  sprintf(str, "Task %d has Dispatch at Tick %ld ms \r\n",flag, HAL_GetTick()) , 100) ;
-	  		  flag = 0;
-	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
